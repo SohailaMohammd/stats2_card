@@ -26,26 +26,39 @@ body {
     }
 
     .group {
-        margin-top: 40px;
+        margin-top: 37px;
         gap: 78px;
     }
 
-    img {
+    .image {
+        position: relative;
+        width: 488px;
+        height: 340px;
 
-        width: 480px;
-        transform: translate(0px, 0px);
-        border-radius: 10px;
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .ground {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: #8100d76e;
+            ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            z-index: 1;
+            border-radius: 10px;
+        }
     }
 
-    .ground {
-        content: "";
-        position: absolute;
-        top: 7px;
-        left: 496px;
-        background: #8100d76e;
-        z-index: 1;
-        width: 480px;
-        border-radius: 10px;
-        height: 398px;
-    }
 }
